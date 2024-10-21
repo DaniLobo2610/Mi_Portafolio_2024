@@ -1,5 +1,7 @@
 ---
+import { Image } from "astro:assets";
 ---
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	
 <nav class="bg-dark-blue shadow-lg" style="position: fixed; top: 0; width: 100%; z-index: 1000;">
@@ -10,13 +12,13 @@
                     
                     <a href="/" class="flex items-center py-4 px-2"  >
                        
-                        <span class="font-bold text-white text-2xl"> Daniel Lobo Chavarria</span>
+                        <img src="/Assets/home.png" width="30px" height="30px">  <span class="font-bold text-white text-2xl">&nbsp;&nbsp;Daniel Lobo Chavarria</span>
                     </a>
                 </div>
             </div>
             <div class="hidden md:flex items-center space-x-3">
-                <i class="fa-solid fa-house" style="color: #ffffff;"></i><a href="/" class="py-4 px-2 text-gray-500 font-semibold hover:text-white transition duration-300 text-xl">Inicio</a>
-                <a href="about.html" class="py-4 px-2 text-white border-b-4 border-light-blue font-bold text-xl">Sobre mí</a>
+               <a href="/" class="py-4 px-2 text-gray-500 font-semibold hover:text-white transition duration-300 text-xl">Inicio</a>
+                <a href="about.html" class="py-4 px-2 text-white border-b-4 border-light-blue font-bold text-xl">Sobre mí</a><img  src="/Assets/Zoom.png" width="30px" height="30px">
             </div>
         </div>
     </div>

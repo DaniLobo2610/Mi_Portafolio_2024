@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro"
 import TechCard from "../Components/TechCard.astro"
 import ProjectCard from "../Components/ProjectCard.astro";
+import { Image } from "astro:assets";
 
 import { getCollection } from "astro:content";
 
@@ -45,7 +46,7 @@ const techItems: TechItem[] = [
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	
 	<div style="background-color: #ADC2EB; padding: 30px; border-radius: 30px; box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.9); display: flex; justify-content: center; align-items: center; width: max-content; margin: 0 auto; margin-top: 35px;">
-		<img src="https://scontent.fsap12-2.fna.fbcdn.net/v/t39.30808-6/456106578_2209857846038638_1186721722357921678_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=6qPL0Qs3CMoQ7kNvgF-C-gF&_nc_ht=scontent.fsap12-2.fna&_nc_gid=AIkcVTNj-iy7Q2tS-GbmoTY&oh=00_AYA8bw4NXgsu58A2jp-YF4KNoQTpmShCI2bEA5oCkpDftw&oe=6713BC8D" style="width: 350px; height: auto;" >
+		<img src="/Assets/Foto.jpg" alt="Daniel Lobo" width="350px" height="300"/>
 	</div>
 
 	<div style="background-color: white; padding: 50px; border-radius: 30px; box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.9); margin-top: 35px; width: calc(100% + 170px); margin-left: -80px;">
