@@ -16,6 +16,7 @@ interface ProjectItem{
 	data: {
 		title: string;
 		shortDescription: string;
+		date: string;
 	}
 }
 
@@ -97,14 +98,20 @@ const techItems: TechItem[] = [
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
 
-				{ projects.map( ( p ) => (
-					<ProjectCard
-						title={ p.data.title }
-						description={ p.data.shortDescription }
-						link={ `/projects/${ p.slug }` }
-					/>
-				) ) }
-
+				{projects
+					.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()) // Ordena de más reciente a más antiguo
+					.map((p) => (
+					  
+					  <ProjectCard
+						key={p.slug} 
+						title={p.data.title}
+						description={p.data.shortDescription}
+						link={`/projects/${p.slug}`}
+						date={p.data.date}
+					  />
+					))}
+				  
+				  
             </div>
         </section>
 	</div>

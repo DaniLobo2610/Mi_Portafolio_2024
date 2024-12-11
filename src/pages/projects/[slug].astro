@@ -24,6 +24,7 @@ interface Prop {
         data: {
             title: string;
             shortDescription: string;
+            date: string;
         };
         render: () => Promise< { Content: any; heading: any[] } >;
     }
@@ -39,6 +40,7 @@ const { Content, headings } = await p.render();
     <div class="max-w-4xl mx-auto px-4 py-8">
         <h1 class="text-4xl font-bold text-orange-800 mb-4">{p.data.title}</h1>
         <p class="text-xl text-gray-600 mb-8">{p.data.description}</p>
+        <p class="text-xl text-gray-600 mb-8">{p.data.date}</p>
 
         <nav class="toc mb-8 bg-orange-50 p-4 rounded-lg">
           <h2 class="text-2xl font-semibold mb-4 text-orange-800">Tabla de Contenido</h2>
